@@ -36,7 +36,8 @@ const obtenerPersona = async() => {
             this.innerHTML = "Numero: ";
         }
             })
- 
+          
+
     document.getElementById("CONTACTO2").addEventListener("click", function () {
         if (document.getElementById("CONTACTO2").innerHTML == "Email: ") {
             this.innerHTML = "Email: "+user.email;
@@ -44,7 +45,7 @@ const obtenerPersona = async() => {
             this.innerHTML = "Email: ";
         }
           })
-
+          
     document.getElementById("CONTACTO3").addEventListener("click", function () {
             if (document.getElementById("CONTACTO3").innerHTML == "Direccion: ") {
                 this.innerHTML = "Direccion: "+user.location.street.name;
@@ -52,6 +53,11 @@ const obtenerPersona = async() => {
                 this.innerHTML = "Direccion: ";
             }
               })
-        }) 
+
+    document.getElementById("recipient-name").value = user.email
+
+
+        
+      }) 
 
         

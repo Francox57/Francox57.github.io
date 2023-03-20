@@ -70,7 +70,7 @@ body{
     --bs-list-group-item-padding-y: 0.5rem;
     --bs-list-group-action-color: var(--bs-secondary-color);
     --bs-list-group-action-hover-color: #fff;
-    --bs-list-group-action-hover-bg: #7B2524;
+    --bs-list-group-action-hover-bg: #5A0404;
     --bs-list-group-action-active-color: #fff;
     --bs-list-group-action-active-bg: #86302F;
     --bs-list-group-disabled-color: #5A0404;
@@ -79,9 +79,11 @@ body{
     --bs-list-group-active-bg: #0d6efd;
     --bs-list-group-active-border-color: #0d6efd;
     border-color: #86302F;
-
+    
 
 }
+
+
 
 .PARTEIZQ{
 
@@ -104,4 +106,21 @@ body{
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #5A0404;
     --bs-btn-disabled-border-color: #5A0404;
+}
+
+.bi-check{
+    font-size: 75px;
+    color: rgb(0, 128, 55); 
+    opacity: 1; 
+    -webkit-text-stroke-width: 4.2px;
+
+}
+
+
+.bi-x{
+    font-size: 75px; 
+    color: rgb(255, 0, 0); 
+    -webkit-text-stroke-width: 4.2px;
+
+
 }

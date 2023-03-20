@@ -10,11 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://img.icons8.com/color/256/bookmark-ribbon--v1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
     <link rel="stylesheet" href="CV.css">
     
 </head>
 
-<body>
+<body style="font-size: large;">
+    
     <div class="container text-center" id="TITULO">
         <div class="row">
             <h1 class="col">CURRICULUM VITAE</h1>
@@ -23,13 +25,14 @@
 
     <div class="container" id="CUERPO">
         <div class="row">
-            <div class="col col-6" id="DATOS1">
+            <div class="col col-6" id="DATOS1" class="PARTEIZQ">
                 
                 <img src="" alt="No es posible cargar la imagen" class="img-fluid rounded float-right PARTEIZQ" id="IMAGEN1">
 
-                <ul class="PARTEIZQ">
+                <div>
+                    <ul class="PARTEIZQ">
                     
-                    <h3>Datos Personales:</h2>
+                    <h2>Datos Personales:</h2>
                     <li class="list-group-item DAT">
                         <u id="NOMBRE1"></u>
                     </li>
@@ -46,61 +49,175 @@
                         <u id="EDAD1"></u>
                     </li class="list-group-item DAT">
 
-                </ul>
+                    </ul>
+                </div>
 
                 <div class="list-group">
-                    <ul id="DATOSPERSONALES" class="PARTEIZQ">
+                    <ul id="DATOSPERSONALES" class="PARTEIZQ" style="width: auto;">
                         <button data-bs-target="#" class="list-group-item list-group-item-action REST" id="CONTACTO1">Numero: </button>
-                        <button data-bs-target="#" class="list-group-item list-group-item-action REST" id="CONTACTO2">Email: </button>
+                        <button data-bs-target="#" class="list-group-item list-group-item-action REST" id="CONTACTO2" style="font-size: auto;">Email: </button>
                         <button data-bs-target="#" class="list-group-item list-group-item-action REST" id="CONTACTO3">Direccion: </button>
                     </ul>
                 </div>
 
-                <div id="ESTUDIOS" class="PARTEIZQ">
+                <div class="PARTEIZQ">
                     <p>
-                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                          Estudios
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#ColapsarEstudios" aria-expanded="false" aria-controls="ColapsarEstudios">
+                            <span id="boot-icon" class="bi bi-arrow-down" style="font-size: large; color: #DF5F5F; -webkit-text-stroke-width: 2.5px;"></span> 
+                            <span style="font-size: large;">Estudios</span> 
+                            
                         </button>
                     </p>
-                    <div>
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                            <div class="card card-body">
-                                <ul class="list-group list">
-                                    <li  class="list-group-item REST"  > Licenciatura en Administración de Empresas de la Universidad XYZ (2016-2020)</li>
-                                    <li  class="list-group-item REST"  > Maestría en Marketing de la Universidad ABC (2020-2022) </li>
+                    <div style="min-height: 120px;" >
+                        <div class="collapse" id="ColapsarEstudios">
+                            <div class="card card-body" style="width: auto" >
+                                <ul class="list-group list-group-flush">
+                                    <li  class="list-group-item REST"  > Licenciatura en Administración de Empresas de la Universidad de Belgrano (2016-2020)</li>
+                                    <li  class="list-group-item REST"  > Maestría en Marketing de la Universidad de Palermo (2020-2022) </li>
                                     <li  class="list-group-item REST"  > Doctorado en Marketing de la Universidad de Nueva York (2022-2026)</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
 
-        <div class="col col-6" >
+            <div class="col col-6" >
                 <h3 class="text-center">Sobre mi:</h3>
                 <p id="PRESENTACION1"> </p>
 
-            <div> 
-                <p>
-                    <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        Habilidades
-                    </button>
-                </p>
-                <div class="collapse" id="collapseExample">
+                <div> 
+                    <p>
+                        <button class="btn btn-dark" data-toggle="collapse" data-target="#ColapsarHabilidades" role="button" aria-expanded="false" aria-controls="ColapsarHabilidades"> 
+                            <span id="boot-icon" class="bi bi-arrow-down" style="font-size: large; color: #DF5F5F; -webkit-text-stroke-width: 2.5px;"></span> 
+                            <span style="font-size: large;">Habilidades</span> 
+                        </button>
+                    </p>
+                </div>
+
+                <div class="collapse" id="ColapsarHabilidades">
                     <div class="card card-body">
                         <ul class="list-group list-group-flush">
-                            <li  class="list-group-item REST"  >Desarrollo e implementación de estrategias de marketing</li>
-                            <li  class="list-group-item REST"  >Gestión de redes sociales</li>
-                            <li  class="list-group-item REST"  >Planificación y coordinación de eventos</li>
-                            <li  class="list-group-item REST"  >Investigación y análisis de mercado</li>
-                            <li  class="list-group-item REST"  >Gestión de relaciones con clientes</li>
+                            <li  class="list-group-item REST">Desarrollo e implementación de estrategias de marketing</li>
+                            <li  class="list-group-item REST">Gestión de redes sociales</li>
+                            <li  class="list-group-item REST">Planificación y coordinación de eventos</li>
+                            <li  class="list-group-item REST">Investigación y análisis de mercado</li>
+                            <li  class="list-group-item REST">Gestión de relaciones con clientes</li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+            
+                <div>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Idiomas europeos manejados</th>
+                            <th scope="col">Ingles</th>
+                            <th scope="col">Frances</th>
+                            <th scope="col">Aleman</th>
+                            <th scope="col">Español</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">C2</th>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                            <td><p id="boot-icon" class="bi bi-x"></p></td>
+                            <td><p id="boot-icon" class="bi bi-x"></p></td>
+                            <td><p id="boot-icon" class="bi bi-x"></p></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C1</th>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                            <td><p id="boot-icon" class="bi bi-x"></p></td>
+                            <td><p id="boot-icon" class="bi bi-x"></p></td>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">B2</th>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                            <td><p id="boot-icon" class="bi bi-x"></p></td>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">B1</th>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                            <td><p id="boot-icon" class="bi bi-check" ></p></td>
+                        </tr>
+                        
+                        </tbody>
+                    </table>  
+                </div>
+            
         </div>
     </div>
 
+
+
+
+    
+
+    <footer class="text-center text-white " style="background-color: #21081a;">
+        <div class="container p-4"> 
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#CONTACTARME" data-whatever="" id="1">Contactarme</button>
+            <div class="modal fade" id="CONTACTARME" tabindex="-1" role="dialog" aria-labelledby="CONTACTARMELabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="CONTACTARMELabel" style="color: blue;">Contactarme por Mail:</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <form>
+                                <form class="form-group">
+                                    <label for="recipient-name" class="col-form-label" style="color: blue;">Mail:</label>
+                                    <input type="text" value="Mail" class="form-control" id="recipient-name"> 
+                                </form>
+                                <form class="form-group" aria-required="true">
+                                    <label for="message-text" class="col-form-label" style="color: blue;">Mensaje:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </form>
+                            </form>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" aria-required="true">Enviar Mensaje</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="color: blue;">Su mensaje a sido enviado</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body" style="color: blue;">
+                                            Gracias por su mensaje, usted obtendra una respuesta por mi parte lo antes posible.
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
