@@ -229,3 +229,16 @@ div {
     border-bottom-width: var(--bs-border-width);
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
+
+
+
+.POPUP{
+
+    color: blue;
+
+}
+
+#footer{
+
+    background-color: #21081a;
+}

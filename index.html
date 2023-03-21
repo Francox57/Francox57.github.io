@@ -270,7 +270,7 @@
 
 
 
-    <footer class="text-center text-white " style="background-color: #21081a;">
+    <footer class="text-center text-white" id="footer">
         <div class="container p-4">
             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#CONTACTARME" data-whatever=""
                 id="1">Contactarme</button>
@@ -279,7 +279,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="CONTACTARMELabel" style="color: blue;">Contactarme por Mail:
+                            <h5 class="modal-title POPUP" id="CONTACTARMELabel">Contactarme por Mail:
                                 </h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -289,13 +289,15 @@
                         <div class="modal-body">
                             <form>
                                 <form class="form-group">
-                                    <label for="recipient-name" class="col-form-label"
-                                        style="color: blue;">Mail:</label>
+                                    <label for="recipient-name" class="col-form-label POPUP">
+                                        Mail:
+                                    </label>
                                     <input type="text" value="Mail" class="form-control" id="recipient-name">
                                 </form>
                                 <form class="form-group" aria-required="true">
-                                    <label for="message-text" class="col-form-label"
-                                        style="color: blue;">Mensaje:</label>
+                                    <label for="message-text" class="col-form-label POPUP">
+                                        Mensaje:
+                                    </label>
                                     <textarea class="form-control" id="message-text"></textarea>
                                 </form>
                             </form>
@@ -310,16 +312,17 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h6 class="modal-title" id="exampleModalLabel" style="color: blue;">Su
+                                            <h6 class="modal-title POPUP" id="MENSAJEENVIADO">Su
                                                 mensaje a sido enviado</h5>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                         </div>
-                                        <div class="modal-body" style="color: blue;">
-                                            Gracias por su mensaje, usted obtendra una respuesta por mi parte lo antes
-                                            posible.
+                                        <div class="modal-body POPUP" id= "MensajeGRACIAS">
+                                            <p> Gracias por su mensaje, usted obtendra una respuesta por mi parte lo antes
+                                                posible.
+                                            </p>
                                         </div>
 
                                         <div class="modal-footer">
