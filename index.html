@@ -15,13 +15,14 @@
     
 </head>
 
-<body style="font-size: large;">
-    
+<body style="text-center;" class="text-center">
+<header>
     <div class="container text-center" id="TITULO">
         <div class="row">
             <h1 class="col">CURRICULUM VITAE</h1>
         </div>
     </div>
+</header>
 
     <div class="container" id="CUERPO">
         <div class="row">
@@ -53,9 +54,9 @@
                 </div>
 
                 <div class="list-group">
-                    <ul id="DATOSPERSONALES" class="PARTEIZQ" style="width: auto;">
+                    <ul id="DATOSPERSONALES" class="PARTEIZQ">
                         <button data-bs-target="#" class="list-group-item list-group-item-action REST" id="CONTACTO1">Numero: </button>
-                        <button data-bs-target="#" class="list-group-item list-group-item-action REST" id="CONTACTO2" style="font-size: auto;">Email: </button>
+                        <button data-bs-target="#" class="list-group-item list-group-item-action REST" id="CONTACTO2">Email: </button>
                         <button data-bs-target="#" class="list-group-item list-group-item-action REST" id="CONTACTO3">Direccion: </button>
                     </ul>
                 </div>
@@ -95,6 +96,8 @@
                     </p>
                 </div>
 
+                
+
                 <div class="collapse" id="ColapsarHabilidades">
                     <div class="card card-body">
                         <ul class="list-group list-group-flush">
@@ -105,11 +108,59 @@
                             <li  class="list-group-item REST">Gestión de relaciones con clientes</li>
                         </ul>
                     </div>
+
+                    
                 </div>
+
+                <div id="EXPERIENCIALABORAL">
+                <h4>Experiencia Laboral</h4>
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <p class="mb-0">
+                          <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Especialista en Marketing en Toyota (2020 - 2022)
+                          </button>
+                        </p>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                           <p> Lideré la estrategia de marketing digital, aumentando la presencia en redes sociales en un 30% y generando un aumento del 20% en la generación de leads.
+                            Desarrollé y ejecuté campañas publicitarias exitosas en línea, aumentando las ventas en un 15% durante el primer trimestre de 2022.
+                            Realicé análisis de mercado y de la competencia para identificar oportunidades de crecimiento y mejora de la marca. 
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <p class="mb-0">
+                          <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Asistente de Marketing en BuhoMedia (2017 - 2019)
+                          </button>
+                        </p>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p> Colaboré en la planificación y ejecución de campañas de marketing en línea y fuera de línea para clientes de diversos sectores.
+                                Investigué y recopilé datos de mercado y de la competencia para apoyar el desarrollo de estrategias de marketing.
+                                Gestioné las redes sociales de los clientes, aumentando la interacción y el alcance en un 25%.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+
+                  </div>
             </div>
 
             
-                <div>
+
+
+                <div id="TABLA">
                     <table class="table table-striped table-dark">
                         <thead>
                         <tr>
@@ -153,6 +204,7 @@
                         </tbody>
                     </table>  
                 </div>
+                
             
         </div>
     </div>
@@ -169,7 +221,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="CONTACTARMELabel" style="color: blue;">Contactarme por Mail:</h5>
+                            <h5 class="modal-title" id="CONTACTARMELabel" style="color: blue;">Contactarme por Mail:</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -195,7 +247,7 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel" style="color: blue;">Su mensaje a sido enviado</h5>
+                                            <h6 class="modal-title" id="exampleModalLabel" style="color: blue;">Su mensaje a sido enviado</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -205,7 +257,7 @@
                                         </div>
 
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>  
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>  
                                         </div>
                                     </div>
                                 </div>
